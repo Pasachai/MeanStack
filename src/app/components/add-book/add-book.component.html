@@ -1,5 +1,29 @@
-<div></div>
-<div class="shadow"></div>
-<br>
-<div></div>
+<div class="container mt-3">
+  <h1>Add data</h1>
+  <div class = "row justify-content center mt-3"> </div>
+    <div class="col-md-4">
+      <form [formGroup]="bookForm" (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" formControlName="name" required>
+        </div>
+        <div class="form-group">
+          <label for="name">Price</label>
+          <input type="text" class="form-control" formControlName="price" required>
+        </div>
+        <div class="form-group">
+          <label for="name">Description</label>
+          <input type="text" class="form-control" formControlName="description" required>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" type="submit"> Add book</button>
+        </div>
+      </form>
+    </div>
+
+</div>
+
+
+
+
 <div class="shadow"></div>
